@@ -24,26 +24,24 @@ function buildMetadata(sample) {
         panel_meta.append("li").text(`${key}: ${value}`); //li or something else?
       });
 
-
     })
 }
 
 
 function buildCharts(sample) {
 
-  // @TODO: Use `d3.json` to fetch the sample data for the plots
-      //// 15_02_03-Ins_D3-JSON
-
+  //  Use `d3.json` to fetch the sample data for the plots
   d3.json(`/samples/${sample}`).then(function(data) {
     console.log(data);
     
-    // @TODO: Build a Bubble Chart using the sample data    
-    // Create a Bubble Chart that uses data from your samples route (/samples/<sample>) to display each sample.
-    // Use otu_ids for the x values.
-    // Use sample_values for the y values.
-    // Use sample_values for the marker size.
-    // Use otu_ids for the marker colors.
-    // Use otu_labels for the text values.
+    // Below creates a Bubble Chart that uses data from the samples route (/samples/<sample>) 
+    // to display each sample.
+
+    // otu_ids for the x values.
+    // sample_values for the y values.
+    // sample_values for the marker size.
+    // otu_ids for the marker colors.
+    // otu_labels for the text values.
 
     const otu_ids = data.otu_ids;
     const otu_labels = data.otu_labels;
