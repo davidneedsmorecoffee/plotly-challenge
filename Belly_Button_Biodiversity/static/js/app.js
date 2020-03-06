@@ -14,22 +14,17 @@ function buildMetadata(sample) {
     var panel_meta = d3.select(`#sample-metadata`);
 
     // Use `.html("") to clear any existing metadata
-    //// Similar to 09-Par_Form_Filter example
       panel_meta.html("");
 
     // Use `Object.entries` to add each key and value pair to the panel
-    // Hint: Inside the loop, you will need to use d3 to append new
+    // inside the loop use d3 to append new
     // tags for each key-value in the metadata.
-    //// Similar to 03-Evr_D3_Table
-    //// Similar to 14_3_05-Stu_onChange (bonus)
     
       Object.entries(sample_data).forEach(([key,value]) => {
         panel_meta.append("li").text(`${key}: ${value}`); //li or something else?
       });
 
-    // BONUS: Build the Gauge Chart
-    // buildGauge(data.WFREQ);
-    // https://com2m.de/blog/technology/gauge-charts-with-plotly/
+
     })
 }
 
