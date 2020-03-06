@@ -11,7 +11,6 @@ function buildMetadata(sample) {
     console.log(sample_data);
 
     // Use d3 to select the panel with id of `#sample-metadata`
-    //// Similar to 14_3_05-Stu_onChange
     var panel_meta = d3.select(`#sample-metadata`);
 
     // Use `.html("") to clear any existing metadata
