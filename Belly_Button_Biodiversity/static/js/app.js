@@ -69,11 +69,10 @@ function buildCharts(sample) {
     Plotly.plot('bubble', bubble_data, bubble_layout);
 
   // below code chunk builds a pie chart
-    // use slice() to grab the top 10 sample_values,
-    // otu_ids, and labels (10 each).
-    // The PIE chart uses data from the samples route (/samples/<sample>) to display the top 10 samples.
+    // use slice() to grab the top 10 sample_values, otu_ids, and labels (10 each).
+    // The pie chart uses data from the samples route (/samples/<sample>) to display the top 10 samples.
     
-    // sample_values as the values for the PIE chart.
+    // sample_values as the values for the pie chart.
     // otu_ids as the labels for the pie chart.
     // otu_labels as the hovertext for the chart.
     
