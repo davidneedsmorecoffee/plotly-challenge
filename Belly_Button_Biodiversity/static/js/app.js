@@ -6,8 +6,7 @@ function buildMetadata(sample) {
   //// use this to clear the meta)data d3.select(`#sample-metadata`).html("")
   var url = `/metadata/${sample}`;
   
-    // Use `d3.json` to fetch the metadata for a sample
-  //// Similar to 08-Stu_Stocks_Report
+  // Use `d3.json` to fetch the metadata for a sample
   d3.json(url).then(function(sample_data){
     console.log(sample_data);
 
