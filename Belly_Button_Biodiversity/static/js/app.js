@@ -1,6 +1,5 @@
 function buildMetadata(sample) {
 
-  // @TODO: Complete the following function that builds the metadata panel
   //// the follwoing code chunk is for live-java-scripting testing in browser console
   // d3.json(`/metadata/${950}`).then(function(sample_data){console.log(sample_data); Object.entries(sample_data).forEach(([key,value]) => {
   //   d3.select(`#sample-metadata`).append("li").text(`${key}: ${value}`);});});
